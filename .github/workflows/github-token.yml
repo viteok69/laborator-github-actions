@@ -1,0 +1,13 @@
+name: GITHUB_TOKEN Authentication
+
+on: [push]
+
+jobs:
+  token-demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Access GitHub API using GITHUB_TOKEN
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+               https://api.github.com/repos/${{ github.repository }}
