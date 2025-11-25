@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
+          scope: "viteok69"
 
       - name: Install dependencies
         run: npm install
