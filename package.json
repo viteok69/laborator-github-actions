@@ -1,7 +1,12 @@
 {
-  "name": "github-actions-test",
+  "name": "@viteok69/github-actions-package",
   "version": "1.0.0",
+  "description": "Pachet publicat folosind GitHub Actions",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
-    "test": "node test.js"
+    "test": "node index.js"
   }
 }
