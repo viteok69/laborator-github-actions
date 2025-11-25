@@ -1,5 +1,5 @@
 {
-  "name": "@viteok69/github-actions-package",
+  "name": "@viteok69/laborator-github-actions",
   "version": "1.0.0",
   "description": "Pachet publicat folosind GitHub Actions",
   "main": "index.js",
