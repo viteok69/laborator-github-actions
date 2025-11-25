@@ -1,0 +1,14 @@
+name: "Hello Custom Action"
+description: "O acțiune personalizată care afișează un mesaj"
+
+inputs:
+  name:
+    description: "Numele persoanei"
+    required: true
+    default: "Student"
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello ${{ inputs.name }} from custom GitHub Action!"
+      shell: bash
